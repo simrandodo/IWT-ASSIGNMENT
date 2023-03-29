@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>EX-26</title>
+</head>
+<body>
+    <div id="counter"></div>
+    <button onclick="x=setInterval(s,1000)">Start</button>
+    <button onclick="clearInterval(x)">stop</button>
+    <button onclick="x=setInterval(r,1000)">restart</button>
+    <script>
+        block=document.getElementById('counter');
+        count=0;
+
+        function s(){
+            count++;
+            block.innerHTML=count;
+        }
+        function r(){
+            count=0;
+            count++;
+            block.innerHTML=count;
+        }
+    </script>
+</body>
+</html>

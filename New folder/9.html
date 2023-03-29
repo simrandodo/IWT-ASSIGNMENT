@@ -1,0 +1,51 @@
+<html>
+<head>
+<h1 align=center> Feedback form</h1>
+</head>
+<body>
+<form method="post" action=thanks.html>
+<table align=center>
+<tr><td>*please fill the details so that we can provide best experience to our visiters</td></tr>
+<tr><td><label>username :</label></td>
+<td><input type=text name=uname placeholder="enter name"  required /></td></tr>
+<tr><td><label>e-mail :</label></td>
+<td><input type=email placeholder="enter e-mail" required /></td></tr>
+
+<tr><td>* Is this your first visit to the website</td></tr>
+<tr><td><input type=radio name=yes value="y" />yes</td>
+<td><input type=radio name=yes  value="n" />no</td>
+</tr>
+
+<tr><td>*what is primary reason of your visit</td></tr>
+<tr><td><textarea name=comments row=10 placeholder="add comments"></textarea></td>
+
+</tr>
+
+<tr><td>*what your area of interest?</td></tr>
+<tr><td><select >
+<option>science</option>
+<option selected>politics</option>
+<option>art</option>
+<option>cooking</option>
+
+</select></td>
+
+</tr>
+
+<tr><td>*what is the likelihood thay you will return to the site</td></tr>
+<tr><td><input type=checkbox name=gender value="r" />slitely likely</td>
+<td><input type=checkbox name=gender value="r" />moderately likely</td>
+<td><input type=checkbox name=gender value="r" />extremely likely</td>
+<td><input type=checkbox name=gender value="r" />very likely</td>
+</tr>
+<tr><td>*please provide any additional comments(optional)</td></tr>
+<tr><td><textarea name=comments row=40 placeholder="add comments"></textarea></td>
+
+</tr>
+
+<tr><td><input type=submit value="submit"/></td>
+<td><input type=reset /></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<student_details>
+	<std1>
+		<fname>Abc</fname>
+		<lname>Tripathi</lname>
+		<roll_no>1</roll_no>
+		<class>XI</class>
+		<marks>
+			<sub1>10</sub1>
+			<sub2>9</sub2>
+			<sub3>7</sub3>
+			<sub4>8</sub4>
+			<sub5>9</sub5>
+		</marks>
+	</std1>
+	<std2>
+		<fname>Xyz</fname>
+		<lname>Verma</lname>
+		<roll_no>2</roll_no>
+		<class>XI</class>
+		<marks>
+			<sub1>9</sub1>
+			<sub2>6</sub2>
+			<sub3>7</sub3>
+			<sub4>4</sub4>
+			<sub5>8 </sub5>
+		</marks>
+	</std2>
+	<std3>
+		<fname>Pqr</fname>
+		<lname>Singh</lname>
+		<roll_no>3</roll_no>
+		<class>XI</class>
+		<marks>
+			<sub1>10</sub1>
+			<sub2>8</sub2>
+			<sub3>8</sub3>
+			<sub4>9</sub4>
+			<sub5>8</sub5>
+		</marks>
+	</std3>
+</student_details>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>EX-24</title>
+</head>
+<body>
+    <form action="" >
+        <input type="text" id="I" name="input" onchange="convert()">
+
+        <select name="inOp" id="" onchange="convert()">
+            <option value="C">Celcius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+
+        <input type="text" name="output">
+
+        <select name="outOp" id="" onchange="convert()">
+            <option value="C">Celcius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+    </form>
+
+    <script>
+        function convert(){
+            input=document.getElementById('I').value;
+            inOp=document.forms[0].elements[1].value;
+            outOp=document.forms[0].elements[3].value;
+
+            if(inOp=='C' && outOp=='K'){
+                res=parseFloat(input)+273;
+            }
+            else if(inOp=='K' && outOp=='C'){
+                res=parseFloat(input)-273;
+            }
+            else if(inOp=='C' && outOp=='F'){
+                res=(parseFloat(input)*9/5)+32;
+            }
+            else if(inOp=='F' && outOp=='C'){
+                res=(parseFloat(input)-32)*5/9;
+            }
+            else if(inOp=='F' && outOp=='K'){
+                res=(parseFloat(input)-32)*5/9+273;
+            }
+            else if(inOp=='K' && outOp=='F'){
+                res=((parseFloat(input)-273)*9/5)+32;
+            }
+            else{
+                res=input;
+            }
+            document.forms[0].elements[2].value=res;
+        }
+    </script>
+
+    <button onclick="convert()">Convert</button>
+</body>
+</html>
